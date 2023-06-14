@@ -1,11 +1,13 @@
 # Back-Propogation-Architectural-Basics
 
 
-## Part 1
+## Part 1 - Back Propogation
 
-This part shows 
+This part expands on how Back Propogation works. We take an example with 2 inputs and 2 outputs and 1 hidden layer. (image below)\
 
-![image](https://github.com/iris-kurapaty/Back-Propogation-Architectural-Basics/assets/52544352/6f3ca31e-a18e-4e8f-aff6-a8034d861fcc)
+The foward calculations the network uses are shown in block 1. We know the inputs & outputs and we need to learn what our weights will be so that when i1 and i2 are used, our model should give us outputs o1 and o2. The backward propogation helps us with that. 
+
+![image](https://github.com/iris-kurapaty/Back-Propogation-Architectural-Basics/assets/52544352/1cb2bf28-15cf-42a3-a5a2-572b0c2fa957)
 
 ![image](https://github.com/iris-kurapaty/Back-Propogation-Architectural-Basics/assets/52544352/03e6dd7b-1c4f-4daf-8001-27f4d848b299)
 
