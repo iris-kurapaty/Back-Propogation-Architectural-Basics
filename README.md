@@ -34,7 +34,7 @@ The images below shows the rate of change of Loss with each iteration.
   ![image](https://github.com/iris-kurapaty/Back-Propogation-Architectural-Basics/assets/52544352/542d91e1-8e96-402d-baed-1ab6ca8833cf)
 
 
-
+*Note:* PLease check the excel file Back_Propogation.xlsx on the repo to see all calculations.
 ## Part 2 
 The objective was to build a model that gives us:
 1. 99.4% validation accuracy
