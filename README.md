@@ -3,15 +3,17 @@
 
 ## Part 1 - Back Propogation
 
-This part expands on how Back Propogation works. We take an example with 2 inputs and 2 outputs and 1 hidden layer. (image below)\  
+This part expands on how Back Propogation works. We take an example with 2 inputs and 2 outputs and 1 hidden layer. (image below)  
 
-The foward calculations the network uses are shown in block 1. We know the inputs & outputs and we need to learn what our weights will be so that when i1 and i2 are inputs, our model should give us outputs o1 and o2. The initial weights are random and by minimising the difference between the actual outputs & model outputs as we try to bring the inital random weights closer to the weights we need them to be. Backward propogation helps us with that. Once we understand the value of Loss (differnece in outputs) we try to minimize it for each weight. This done by using partial derviate of Loss for each weight. It gives the direction & magnitude our weights need to change. Block 3 and 6 display the calculations for each weight. We update them using the formula $w_{t+1}$ = $w_t-(learningRate)*(dEtotal/dw_t) $
+The foward calculations the network uses are shown in block 1. We know the inputs & outputs and we need to learn what our weights will be so that when i1 and i2 are inputs, our model should give us outputs o1 and o2. The initial weights are random and by minimising the difference between the actual outputs & model outputs, we try to bring the inital random weights closer to the weights we need them to be. Backward propogation helps us with that. Once we understand the value of Loss (E_total in Block 1) we try to minimize it for each weight. This done by using partial derivative of Loss for each weight. It gives the direction & magnitude our weights need to change. Block 3 and 6 display the calculations or partial derivative of Loss for each weight. We update them using the formula $w_{t+1}$ = $w_t-(learningRate)*(dEtotal/dw_t) $
 
 ![image](https://github.com/iris-kurapaty/Back-Propogation-Architectural-Basics/assets/52544352/1cb2bf28-15cf-42a3-a5a2-572b0c2fa957)
 
 ![image](https://github.com/iris-kurapaty/Back-Propogation-Architectural-Basics/assets/52544352/03e6dd7b-1c4f-4daf-8001-27f4d848b299)
 
-### Error Results with Diff Learning Rates
+### Error Results with Different Learning Rates
+
+The images below shows the rate of change of Loss with each iteration.
 
 1. For Learning rate 0.1\
   ![image](https://github.com/iris-kurapaty/Back-Propogation-Architectural-Basics/assets/52544352/097f111d-6bde-4265-bb7f-2d3a311bda61)
@@ -33,8 +35,12 @@ The foward calculations the network uses are shown in block 1. We know the input
 
 
 
-
-
-
 ## Part 2 
-The architecture is uploaded onto the repo
+The objective was to build a model that gives us:
+1. 99.4% validation accuracy
+2. Has less than 20k parameters
+3. Runs for less than 20 Epochs
+4. Uses Batch Normalization & Dropout
+5. Uses a Fully Connected Layer or Global Average Pooling
+
+The architecture of the model can be seen in the Jupyter notebook uploaded in Folder S6. The results are of the experiments are in the logs of the same file. 
